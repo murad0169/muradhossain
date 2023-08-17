@@ -1,0 +1,52 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #ffffff;
+    color: #333;
+}
+
+nav {
+    background-color: #0D4528;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+}
+
+nav a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    margin: 18px 15px 6px 5px;
+    font-size: 22px;
+}
+
+/* Change link color to blue for active link */
+.nav-link.active {
+    color: #234D85;
+}
+
+/* Rest of your CSS styles */
+
+/* Change link color to black when on corresponding pages */
+body.home nav a.home,
+body.about nav a.about {
+    color: aquamarine;
+}
+
+nav a:hover,
+nav a:active,
+nav a.active {
+    color: aquamarine;
+    text-decoration: underline;
+}
+
+/* Add the active class to the currently active link */
+nav a.active {
+    font-weight: bold;
+}
+
+
+.nav-link-contact{
+    color: aquamarine;
+}
